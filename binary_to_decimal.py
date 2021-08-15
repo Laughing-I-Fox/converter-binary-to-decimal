@@ -13,4 +13,3 @@ while number != 0:
     number = int(number / 10)
 
 print(Style.BRIGHT + Back.YELLOW + Fore.GREEN + "Your decimal is:", Fore.GREEN, dec_number)
-
