@@ -1,4 +1,8 @@
-number = int(input("Please enter your binary number: "))
+from colorama import init, Fore, Back, Style
+init(autoreset=True)
+
+
+number = int(input(Style.BRIGHT + Back.YELLOW + Fore.RED + "Please enter your binary number: "))
 dec_number = 0
 i = 1
 
@@ -8,4 +12,5 @@ while number != 0:
     i = i * 2
     number = int(number / 10)
 
-print("Your decimal is:", dec_number)
+print(Style.BRIGHT + Back.YELLOW + Fore.GREEN + "Your decimal is:", Fore.GREEN, dec_number)
+
